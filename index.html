@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms: Google Search</title>
+</head>
+<body>
+    <form action="https://google.co.il/search" autocomplete="on" target="_blank">
+        <label for="q">Search Text: </label>
+        <input type="search" id="q" name="q" required><br>
+        <label for="as_qdr">That Was Updated In: </label>
+        <select id="as_qdr" name="as_qdr">
+            <option value="d">The Previous 24 Hours</option>
+            <option value="w">The Previous Seven Days</option>
+            <option value="m">The Previous Month</option>
+            <option value="y"> Past Year</option>
+        </select><br>
+        <label for="lr">Search Only Page Written in Hebrew: </label>
+        <input type="checkbox" id="lr" name="lr" value="lang_iw"><br>
+        <label for="num">Number of results: </label>
+        <input type="number" id="num" name="num" min="1" max="25"><br>
+        <input type="submit" value="Ask Google">
+      </form>    
+</body>
+</html>
